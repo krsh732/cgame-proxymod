@@ -100,6 +100,7 @@ static void VM_Run(vm_t* vm)
     case OP_NOP:
     // break to debugger?
     case OP_BREAK:
+      break;
     // anything else
     default:
       trap_Error(vaf("ERROR: VM_Run: Unhandled opcode(%i)", op));
